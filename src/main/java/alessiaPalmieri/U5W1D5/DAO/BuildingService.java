@@ -15,11 +15,6 @@ public class BuildingService {
         buildingDAO.save(building);
         System.out.println("Building successfully saved!");
     }
-
-    public Building findById(long id){
-        return buildingDAO.findById(id);
-    }
-
     public List<Building> findByName(String name){
         return buildingDAO.findByName(name);
     }
